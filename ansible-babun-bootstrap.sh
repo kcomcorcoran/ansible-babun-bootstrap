@@ -42,6 +42,7 @@ if [ -f /etc/ansible-babun-bootstrap.completed ]
     pact install openssh
     pact install python-setuptools
     pact install libyaml-devel
+    wget https://bootstrap.pypa.io/ez_setup.py -O - | python
     easy_install pip
     pip install PyYAML Jinja2 httplib2 boto awscli
 
